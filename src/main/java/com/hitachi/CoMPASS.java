@@ -3,7 +3,8 @@ package com.hitachi;
 import com.hitachi.service.ImportCarLineMapper;
 import com.hitachi.domain.ImportCarReadDomain;
 import com.hitachi.domain.ImportCarWriteDomain;
-import com.hitachi.service.ImportCarItemProcessor;
+import com.hitachi.processor.ImportCarItemProcessor;
+
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.item.file.FlatFileItemReader;
