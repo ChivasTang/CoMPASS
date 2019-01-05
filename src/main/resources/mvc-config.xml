@@ -12,17 +12,4 @@ http://www.springframework.org/schema/mvc http://www.springframework.org/schema/
     <mvc:annotation-driven/>
     <import resource="app-config.xml"/>
 
-
-    <!-- 事务管理器 -->
-    <bean id="transactionManager" class="org.springframework.batch.support.transaction.ResourcelessTransactionManager"/>
-
-    <!-- 任务仓库 -->
-    <bean id="jobRepository" class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean">
-        <property name="transactionManager" ref="transactionManager"/>
-    </bean>
-
-    <!-- 任务加载器 -->
-    <bean id="jobLauncher" class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
-        <property name="jobRepository" ref="jobRepository"/>
-    </bean>
 </beans>
