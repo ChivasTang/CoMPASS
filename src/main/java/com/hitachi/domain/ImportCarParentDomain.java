@@ -21,7 +21,7 @@ class ImportCarParentDomain {
     /** 排量 */
     private String displacement;
     /** 燃料种类汽油、柴油等 */
-    private String fuel;
+    private String fuel_type;
     /** 变速器种类 */
     private String transmission;
     /** 轿车、掀背车、SUV等 */
@@ -32,6 +32,4 @@ class ImportCarParentDomain {
     private String ownership;
     /** 车身颜色 */
     private String color;
-    /** 数量 */
-    private int quantity;
 }

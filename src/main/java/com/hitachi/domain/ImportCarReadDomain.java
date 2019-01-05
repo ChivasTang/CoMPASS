@@ -10,4 +10,7 @@ import lombok.ToString;
 public class ImportCarReadDomain extends ImportCarParentDomain{
     //年月
     private String year_month;
+
+    /** 数量 */
+    private String quantity;
 }

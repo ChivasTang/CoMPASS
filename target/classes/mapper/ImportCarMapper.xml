@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="importCar">
+    <insert id="insert" parameterType="com.hitachi.domain.ImportCarWriteDomain" useGeneratedKeys="true" flushCache="true">
+        INSERT INTO import_car (
+          ID
+          , YEAR
+          , MONTH
+          , PROVINCE
+          , CITY
+          , COMPANY
+          , MODEL
+          , MODEL_STYLE
+          , DISPLACEMENT
+          , FUEL_TYPE
+          , TRANSMISSION
+          , MODEL_TYPE
+          , USE_AS
+          , OWNERSHIP
+          , COLOR
+          , QUANTITY
+        ) VALUES (
+        #{id}
+        , #{year}
+        , #{month}
+        , #{province}
+        , #{city}
+        , #{company}
+        , #{model}
+        , #{model_style}
+        , #{displacement}
+        , #{fuel_type}
+        , #{transmission}
+        , #{model_type}
+        , #{use_as}
+        , #{ownership}
+        , #{color}
+        , #{quantity}
+        );
+    </insert>
+</mapper>

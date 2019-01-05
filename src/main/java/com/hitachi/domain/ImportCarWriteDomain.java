@@ -14,4 +14,7 @@ public class ImportCarWriteDomain extends ImportCarParentDomain{
     private int year;
     //月
     private int month;
+
+    /** 数量 */
+    private int quantity;
 }
